@@ -1,0 +1,9 @@
+What is CDN?
+https://legacy.reactjs.org/docs/cdn-links.html
+Content Delivery Network
+A CDN is a group of geographically distributed servers that speed up the delivery of web content by bringing it closer to the location of the users accessing the content.
+
+What is crossorigin?
+Cross-Origin Resource Sharing (CORS) is an HTTP -header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources.
+
+* The react CORS script should be before the App.js ref

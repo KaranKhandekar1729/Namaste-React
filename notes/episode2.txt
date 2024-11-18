@@ -1,0 +1,33 @@
+What is package.json?
+it is a config and keeps info about the version of package and also updates the version dependencies in future if any with tilde or caret prefix
+
+What is package-lock.json?
+keeps a record of exact version and ensures the same version on local is used for production as well bu mainting the exact hash as well
+
+What is node_modules?
+contains all the npm code
+
+* only put stuff that you cannot regenerate onto the github
+
+* installing with npx is easy to manage react other than making a network call to unpkg.com
+
+What is Parcel doing?
+- Dev Build
+- Local Server Creation
+- HMR = Hot Module Replacement (Hot Reloading)
+- Uses a File Watching Algo (written in C++)
+- Reliable Caching - Binary Files for Faster Builds
+- Image Optimization
+- Minification of Files
+- Bundling
+- Compress Files
+- Content Hashing
+- Code Splitting
+- Differential Bundling
+- Error Handling
+- Diagnostics
+- HTTPs
+- Native Performance
+- Tree Shaking - removes unused code
+- Different Dev and Prod Bundles
+

@@ -1,0 +1,18 @@
+What is JSX?
+NOT html but html/xml LIKE syntax
+Transpiled(by parcel(babel)) before it reaches the Js engine
+
+What is babel?
+Js compiler/transpiler
+
+* JSX => React.createElement => ReactElement - Js Object => HTMLElement(render)
+
+* attributes in JSX are to be written in camelCase
+
+* if typed like this (<h1 className = "heading" >
+        This is JSX
+    </h1>); bracket needed
+
+* Components: React Component
+              Class Based Component - Old
+              Functional Component - New

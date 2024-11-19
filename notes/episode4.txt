@@ -1,0 +1,5 @@
+* passing pprop to a component is same as passing argument to a function4
+
+* config driven UI 
+
+* optional chaining for destructuring data api

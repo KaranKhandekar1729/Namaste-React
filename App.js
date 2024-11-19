@@ -46,43 +46,44 @@ const Header = () => {
     );
 };
 
-const DestinationCard = () => {
+const DestinationCard = (props) => {
     return (
-        <div className="des-cards-row">
             <div className="des-card">
-                <img className="des-image" src={kepler}/>
-                <h1>Kepler 22b</h1>
+                <img className="des-image" src={props.desImage}/>
+                <h1>{props.desName}</h1>
             </div>
-            <div className="des-card">
-                <img className="des-image" src={iss}/>
-                <h1>International Space Station</h1>
-            </div>
-            <div className="des-card">
-                <img className="des-image" src={mars}/>
-                <h1>Mars</h1>
-            </div>
-            <div className="des-card">
-                <img className="des-image" src={saturnsmoon}/>
-                <h1>Saturn's Moons</h1>
-            </div>
-            <div className="des-card">
-                <img className="des-image" src={starship}/>
-                <h1>Starship</h1>
-            </div>
-            <div className="des-card">
-                <img className="des-image" src={lunarcolony}/>
-                <h1>Lunar Colony</h1>
-            </div>
-        </div>
     );
 }
 
 const Body = () => {
     return (
         <div className="body">
-            <div className="search"></div>
-            <div className="des-container">
-                <DestinationCard/>
+            <div className="search">Search</div>
+            <div className="des-cards-row">
+                <DestinationCard
+                    desName="Kepler 22b"
+                    desImage={kepler}
+                />
+                <DestinationCard 
+                    desName="International Space Station"
+                    desImage={iss}
+                />
+                <DestinationCard 
+                    desName="Mars"
+                    desImage={mars}
+                />
+                <DestinationCard 
+                    desName="Saturn's Moons"
+                    desImage={saturnsmoon}
+                />
+                <DestinationCard 
+                    desName="Starship"
+                    desImage={starship}
+                />
+                <DestinationCard 
+                    desName="Lunar Colony"
+                    desImage={lunarcolony}
+                />
             </div>
         </div>
     );

@@ -5,6 +5,10 @@ import kepler from './assets/images/kepler22b.jpg';
 import iss from './assets/images/iss.jpg';
 import saturnsmoon from './assets/images/saturnsmoon.jpg';
 import mars from './assets/images/mars.jpg';
+import lunarcolony from './assets/images/lunar-colony.jpg';
+import starship from './assets/images/starship.jpg';
+
+
 
 /** 
  * Header
@@ -60,6 +64,14 @@ const DestinationCard = () => {
             <div className="des-card">
                 <img className="des-image" src={saturnsmoon}/>
                 <h1>Saturn's Moons</h1>
+            </div>
+            <div className="des-card">
+                <img className="des-image" src={starship}/>
+                <h1>Starship</h1>
+            </div>
+            <div className="des-card">
+                <img className="des-image" src={lunarcolony}/>
+                <h1>Lunar Colony</h1>
             </div>
         </div>
     );

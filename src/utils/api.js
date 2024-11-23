@@ -1,42 +1,42 @@
-import kepler22b from './assets/images/kepler22b.jpg';
-import lunarColony from './assets/images/lunar-colony.jpg';
-import iss from './assets/images/iss.jpg';
-import alphaCentauriBb from './assets/images/AlphaCentauriBb.jpg';
-import starship from './assets/images/starship.jpg';
-import kepler186f1 from './assets/images/Kepler186f_1.jpeg';
-import kepler186f2 from './assets/images/Kepler186f_2.jpg';
-import resoluteBase1 from './assets/images/ResoluteBase_1.jpg';
-import resoluteBase2 from './assets/images/ResoluteBase_2.jpg';
-import resoluteBase3 from './assets/images/ResoluteBase_3.jpg';
-import mars from './assets/images/mars.jpg';
-import europaBase1 from './assets/images/EuropaBase_1.jpg';
-import europaBase2 from './assets/images/EuropaBase_2.jpg';
-import titanBase1 from './assets/images/TitanBase_1.jpg';
-import titanBase2 from './assets/images/TitanBase_2.jpg';
-import callisto from './assets/images/Callisto.jpg';
-import proximaCentauriB1 from './assets/images/ProximaCentauriB_1.jpg';
-import proximaCentauriB2 from './assets/images/ProximaCentauriB_2.jpg';
-import ganymedeBase from './assets/images/GanymedeBase.jpeg';
-import vegaPrime from './assets/images/VegaPrime.jpeg';
-import kepler452b1 from './assets/images/Kepler452b_1.jpg';
-import kepler452b2 from './assets/images/Kepler452b_2.jpg';
-import barnardsStarBase from './assets/images/barnardsStarBase.jpeg';
-import ceres from './assets/images/CeresBase.jpg';
-import wormhole from './assets/images/WormHoleStation.jpg';
-import enceladus from './assets/images/Enceladus.jpg';
-import trappist1e1 from './assets/images/Trappist1e_1.png';
-import trappist1e2 from './assets/images/Trappist1e_2.png';
-import trappist1e3 from './assets/images/Trappist1e_3.jpg';
-import hyperionNexus from './assets/images/HyperionNexus.jpg';
-import spacestation2054 from './assets/images/2054SpaceStation.jpg';
-import oumuamua1 from './assets/images/Oumuamua_1.jpg';
-import oumuamua2 from './assets/images/Oumuamua_3.jpg';
-import oumuamua3 from './assets/images/Oumuamua_3.jpg';
-import nebulaStation from './assets/images/NebulaStation.jpg';
-import ringWorld1 from './assets/images/RingWorld_1.jpg';
-import ringWorld2 from './assets/images/RingWorld_2.jpg';
+import kepler22b from '../../assets/images/kepler22b.jpg';
+import lunarColony from '../../assets/images/lunar-colony.jpg';
+import iss from '../../assets/images/iss.jpg';
+import alphaCentauriBb from '../../assets/images/AlphaCentauriBb.jpg';
+import starship from '../../assets/images/starship.jpg';
+import kepler186f1 from '../../assets/images/Kepler186f_1.jpeg';
+import kepler186f2 from '../../assets/images/Kepler186f_2.jpg';
+import resoluteBase1 from '../../assets/images/ResoluteBase_1.jpg';
+import resoluteBase2 from '../../assets/images/ResoluteBase_2.jpg';
+import resoluteBase3 from '../../assets/images/ResoluteBase_3.jpg';
+import mars from '../../assets/images/mars.jpg';
+import europaBase1 from '../../assets/images/EuropaBase_1.jpg';
+import europaBase2 from '../../assets/images/EuropaBase_2.jpg';
+import titanBase1 from '../../assets/images/TitanBase_1.jpg';
+import titanBase2 from '../../assets/images/TitanBase_2.jpg';
+import callisto from '../../assets/images/Callisto.jpg';
+import proximaCentauriB1 from '../../assets/images/ProximaCentauriB_1.jpg';
+import proximaCentauriB2 from '../../assets/images/ProximaCentauriB_2.jpg';
+import ganymedeBase from '../../assets/images/GanymedeBase.jpeg';
+import vegaPrime from '../../assets/images/VegaPrime.jpeg';
+import kepler452b1 from '../../assets/images/Kepler452b_1.jpg';
+import kepler452b2 from '../../assets/images/Kepler452b_2.jpg';
+import barnardsStarBase from '../../assets/images/barnardsStarBase.jpeg';
+import ceres from '../../assets/images/CeresBase.jpg';
+import wormhole from '../../assets/images/WormHoleStation.jpg';
+import enceladus from '../../assets/images/Enceladus.jpg';
+import trappist1e1 from '../../assets/images/Trappist1e_1.png';
+import trappist1e2 from '../../assets/images/Trappist1e_2.png';
+import trappist1e3 from '../../assets/images/Trappist1e_3.jpg';
+import hyperionNexus from '../../assets/images/HyperionNexus.jpg';
+import spacestation2054 from '../../assets/images/2054SpaceStation.jpg';
+import oumuamua1 from '../../assets/images/Oumuamua_1.jpg';
+import oumuamua2 from '../../assets/images/Oumuamua_3.jpg';
+import oumuamua3 from '../../assets/images/Oumuamua_3.jpg';
+import nebulaStation from '../../assets/images/NebulaStation.jpg';
+import ringWorld1 from '../../assets/images/RingWorld_1.jpg';
+import ringWorld2 from '../../assets/images/RingWorld_2.jpg';
 
-const Response = [
+const desData = [
     {
         "id": 1,
         "name": "Kepler-22b",
@@ -483,4 +483,4 @@ const Response = [
 ]
 
 
-export default Response;
+export default desData;

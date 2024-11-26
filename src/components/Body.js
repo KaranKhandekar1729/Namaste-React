@@ -1,24 +1,68 @@
 import DestinationCard from "./DestinationCard";
 import desData from "../utils/api";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Body = () => {
     //local state variable - Super powerful variable
     const [desDataType, setDesDataType] = useState(desData);
+    const [filteredDestination, setFilteredDestination] = useState(desData);
+    const [searchText, setSearchText] = useState("");
+
+    const handleDestination = (e) => {
+        const selected = e?.target?.value;
+        if (selected === "Exoplanet") {
+            const desType = desData?.filter(
+                (des) => des.type === "Exoplanet"
+            );
+            setDesDataType(desType);
+        }else if (selected === "Space Station") {
+            const desType = desData?.filter(
+                (des) => des.type === "Space Station"
+            );
+            setDesDataType(desType);
+        }else if (selected === "Moon Base") {
+            const desType = desData?.filter(
+                (des) => des.type === "Moon Base"
+            );
+            setDesDataType(desType);
+        }else {
+            setDesDataType(desData);
+        };
+    };
 
     return (
         <div className="body">
             <div className="filter">
-                <button className="filter-btn"
-                    onClick={() => {
-                        const desType = desData?.filter(
-                            (des) => des.type === "Exoplanet"
-                        );
-                        setDesDataType(desType);
-                    }}
+                <div className="search">
+                    <input 
+                        type="text" 
+                        className="search-box" 
+                        value={searchText} 
+                        onChange={(e) => {
+                            setSearchText(e.target.value);
+                        }}
+                    >
+                    </input>
+                    <button
+                        onClick={() => {
+                            const filteredDestination = desData?.filter(
+                                (des) => des.name.toLowerCase().includes(searchText)
+                            );
+                            setDesDataType(filteredDestination);
+                        }}
+                    >
+                        Search
+                    </button>
+                </div>
+                <select name="selectedDestinationType" defaultValue="" className="filter-btn"
+                    onChange={(e) => handleDestination(e)}
                 >
-                    Destination Type
-                </button>
+                <option value="" disabled hidden>Destination Type</option>
+                <option value="Exoplanet">Exoplanet</option>
+                <option value="Space Station">Space Station</option>
+                <option value="Moon Base">Moon Base</option>
+                <option value="All">All</option>
+                </select>
             </div>
             <div className="des-cards-row">
                 {

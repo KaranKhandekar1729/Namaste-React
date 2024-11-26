@@ -215,7 +215,7 @@ const desData = [
     {
         "id": 11,
         "name": "Callisto Retreat",
-        "type": "Luxury Moon Base",
+        "type": "Moon Base",
         "distance": "628.3 million km",
         "travel_time": "18 months",
         "overview": "A luxury resort on Callisto, Jupiter's moon, offering peaceful views and lavish accommodations.",
@@ -303,7 +303,7 @@ const desData = [
     {
         "id": 16,
         "name": "Barnard's Star Base",
-        "type": "Space Base",
+        "type": "Space Station",
         "distance": "6 light-years",
         "travel_time": "25 years",
         "overview": "A futuristic base orbiting Barnard's Star, offering unique scientific experiences and quiet solitude.",
@@ -409,7 +409,7 @@ const desData = [
     {
         "id": 22,
         "name": "2054 Space Station",
-        "type": "Orbital Hub",
+        "type": "Space Station",
         "location": "Low Earth Orbit (LEO)",
         "distance": "400 km from Earth",
         "travel_time": "2 hours (via modern space shuttles)",

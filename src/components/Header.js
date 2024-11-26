@@ -1,5 +1,6 @@
 import logo from "../../assets/images/logo.png";
 import { useState } from "react";
+import { Link } from 'react-router';
 
 const Header = () => {
     const [btnNameReact, setBtnNameReact] = useState("Login");
@@ -14,9 +15,15 @@ const Header = () => {
             <div className="nav-items">
                 <ul>
                     <li id="alignleft">Galactic Gateways</li>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/about">About Us</Link>
+                    </li>
+                    <li>
+                        <Link to="/contact">Contact Us</Link>
+                    </li>
                     <li>Cart</li>
                     <button 
                         className="login"

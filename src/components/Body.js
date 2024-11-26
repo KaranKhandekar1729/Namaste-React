@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 const Body = () => {
     //local state variable - Super powerful variable
     const [desDataType, setDesDataType] = useState(desData);
-    const [filteredDestination, setFilteredDestination] = useState(desData);
     const [searchText, setSearchText] = useState("");
 
     const handleDestination = (e) => {

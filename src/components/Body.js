@@ -1,6 +1,8 @@
 import DestinationCard from "./DestinationCard";
 import desData from "../utils/api";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router";
+
 
 const Body = () => {
     //local state variable - Super powerful variable
@@ -66,10 +68,10 @@ const Body = () => {
             <div className="des-cards-row">
                 {
                     desDataType?.map((card, index) => (
-                        <DestinationCard
+                        <Link to={"/destinations/" + desData.id}><DestinationCard
                             key={index} 
                             desData={card}
-                        />
+                        /></Link>
                     ))
                 }
             </div>

@@ -2,6 +2,7 @@ import DestinationCard from "./DestinationCard";
 import desData from "../utils/api";
 import { useState } from "react";
 import { Link } from "react-router";
+import DestinationInfo from "./DestinationInfo";
 
 
 const Body = () => {
@@ -68,13 +69,14 @@ const Body = () => {
             <div className="des-cards-row">
                 {
                     desDataType?.map((card, index) => (
-                        <Link to={"/destinations/" + desData.id}><DestinationCard
+                        <Link to={"/destinations/" + card?.id}><DestinationCard
                             key={index} 
                             desData={card}
                         /></Link>
                     ))
                 }
             </div>
+            
         </div>
     );
 };

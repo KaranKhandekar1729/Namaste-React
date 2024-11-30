@@ -2381,5 +2381,4 @@ const desData = [
     }
 ]
 
-
 export default desData;

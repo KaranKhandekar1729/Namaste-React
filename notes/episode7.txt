@@ -1,0 +1,6 @@
+* 2 types of routing in web apps
+- client side routing
+- server side routing
+
+* using Link so the page doesnt reload given by react-router-dom
+and uses anchor tag behind the scenes(is a wrapper over <a></a> tag)

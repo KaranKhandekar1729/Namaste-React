@@ -9,3 +9,21 @@ import Component from "path";
 
 export const Component;
 import { Component } from "path";
+
+* Superpower of React
+
+Normal js variable: let, const, var
+State Variable - Super powerful variable
+used to create LSV inside your body component*
+never use inside a loop/function - creates inconsistency (use at the beginning)
+
+let desDataType - Normal Js Variable
+const [desDataType] = useState() - State Variable, 
+Returns a stateful value and a fucntion to update it
+
+* Whenever a state variable updates react re-renders the component
+
+# React Hooks
+- Normal js utility function
+- useState() - superpowerful state variables in react
+- useEffect()

@@ -1,0 +1,40 @@
+* Architecture
+- Monolithic
+- Microservices - separation of consoles
+which follows single responsibility principles 
+where each and every service have its own job
+
+* Ways of Fectching data from Backend
+
+- 1) load page -> make api call -> render
+
+- 2) loads page -> render -> make api call -> re-render
+
+Always using second approach in react
+- gives better UX
+- shows skeleton of the page
+- 2 renders are okay
+
+using useEffect();
+- takes 2 params
+- arrow function
+- and dependency array
+- if no dependency array given then renders each time
+
+    useEffect(() => {
+        fetchData();
+    }, []);
+
+    const fetchData = async () => {
+        const data = await fetch(api);
+
+        const json = await data.json();
+    };
+
+* CORS policy
+- browser blocks the api call due to origin mismatch
+- bypass with Allow CORS chrome extension for chrome browser 
+
+* the button reloading also re-renders the whole header
+* the button variable being constant still changes because its now a new variable
+* the body re renders after input search 

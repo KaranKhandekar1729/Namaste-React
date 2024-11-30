@@ -3,15 +3,8 @@ const DestinationCard = (props) => {
     const { desData } = props;
 
     const {
-        id,
         name,
-        type,
-        distance,
-        travel_time,
-        overview,
-        features,
         images,
-        price
     } = desData;
 
     return (

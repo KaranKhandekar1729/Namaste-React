@@ -15,4 +15,15 @@ const DestinationCard = (props) => {
     );
 };
 
+export const withPromotedLabel = (DestinationCard) => {
+    return (props) => {
+        return (
+            <div className="relative">
+                <label className="promoted-label">Promoted</label>
+                <DestinationCard {...props}/>
+            </div>
+        );
+    };
+}
+
 export default DestinationCard;

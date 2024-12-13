@@ -43,6 +43,7 @@ const desData = [
         "type": "Exoplanet",
         "distance": "600 light-years",
         "travel_time": "45 years",
+        "promoted": true,
         "overview": "Kepler-22b, often hailed as Earth's distant cousin, is a captivating exoplanet that offers an unparalleled blend of familiarity and alien wonder. This super-Earth, larger than our home planet but smaller than ice giants like Neptune, orbits comfortably within its star's habitable zone. Its surface, a tapestry of vast oceans and scattered landmasses, presents a tantalizing possibility of extraterrestrial life. The planet's atmosphere, rich in greenhouse gases, maintains a climate that could support liquid water and potentially even Earth-like vegetation. Visitors to Kepler-22b will find themselves in a world of longer days and years, with each orbit around its sun lasting 290 Earth days. The planet's increased mass results in a gravity about 1.6 times that of Earth, offering a unique physical experience for travelers. Despite its similarities to Earth, Kepler-22b's alien nature is evident in its spectacular double sunsets, caused by its binary star system, and the bioluminescent life forms that light up its nights.",
         "features": [
             "Earth-like gravity",
@@ -716,6 +717,7 @@ const desData = [
         "type": "Planet Base",
         "distance": "225 million km",
         "travel_time": "9 months",
+        "promoted": true,
         "overview": "The Mars Habitat represents humanity's first permanent settlement on another planet, a testament to our species' resilience and the indomitable spirit of exploration. Nestled in the vast Valles Marineris canyon system, the habitat offers a unique blend of scientific research opportunities and breathtaking Martian vistas. The settlement consists of a network of pressurized domes and underground facilities, providing a comfortable Earth-like environment amidst the harsh Martian landscape. Visitors to the Mars Habitat will experience the thrill of walking on another world, with gravity just 38% of Earth's, and witness firsthand the challenges and triumphs of terraforming an alien planet. The habitat serves as a base for groundbreaking research in areology, exobiology, and climate manipulation, as well as a starting point for expeditions to the planet's poles and other regions of interest. Whether you're a scientist contributing to humanity's understanding of Mars, an adventure seeker looking to leave footprints on another world, or a potential colonist training for long-term habitation, the Mars Habitat offers an unparalleled opportunity to be part of the next giant leap for mankind.",
         "features": [
             "Self-sustaining domes",
@@ -1317,6 +1319,7 @@ const desData = [
         "type": "Exoplanet",
         "distance": "1,400 light-years",
         "travel_time": "60 years",
+        "promoted" : true,
         "overview": "Kepler-452b, often hailed as 'Earth's Older Cousin', offers visitors a glimpse into the potential future of our own planet. Orbiting a star remarkably similar to our Sun, but 1.5 billion years older, Kepler-452b presents a unique opportunity to study the long-term evolution of Earth-like worlds. The planet's surface gravity, about twice that of Earth, has led to the development of a unique ecosystem of low-profile but incredibly sturdy lifeforms. Kepler-452b Colony, nestled in a valley surrounded by towering mountain ranges, serves as a base for both scientific research and adventure tourism. Visitors can explore dense forests of alien vegetation, trek across vast rocky plateaus, and study the complex weather patterns shaped by the planet's thicker atmosphere. The colony also houses advanced climate modeling centers, working to understand the planet's history and potential future, providing invaluable insights into the fate of Earth-like planets across the galaxy. Whether you're a climatologist studying long-term planetary evolution, a xenobiologist investigating convergent evolution, or an interstellar tourist seeking to experience life on a 'super-Earth', Kepler-452b offers an unparalleled window into the potential future of habitable worlds.",
         "features": [
             "High-gravity adaptation centers",
@@ -1607,6 +1610,7 @@ const desData = [
         "location": "Near Sagittarius A*",
         "distance": "26,000 light-years from Earth",
         "travel_time": "Approximately 50 years (using current propulsion systems)",
+        "promoted": true,
         "overview": "Wormhole Gateway Station is a highly advanced space hub situated near the supermassive black hole Sagittarius A*. Serving as a critical control center for nearby wormholes, this futuristic station facilitates fast intergalactic travel and research into the fabric of space-time. The station is equipped with cutting-edge navigation technologies and warp capabilities that allow travelers to safely navigate the vast expanse of the universe. It also hosts a range of scientific research on wormholes, space-time anomalies, and the potential for faster-than-light travel, making it a hub for intergalactic explorers, scientists, and advanced spacefaring civilizations.",
         "features": [
             "Control center for nearby wormholes",

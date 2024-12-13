@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap');
+
 @font-face {
     font-family: 'SpaceGrotesk';
     src: url('./assets/fonts/Space_Grotesk/static/SpaceGrotesk-Bold.ttf') format('truetype');
@@ -11,13 +13,19 @@
 
 body {
     margin: 15;
-    padding: 0;
     background: url('./assets/images/blackhole.png') no-repeat center center fixed;
     -webkit-break-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     columns: #fff;
-    color: white;
+    /* color: white; */
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .header {
@@ -212,6 +220,13 @@ body {
     margin-bottom: 2rem;
 }
 
+:root {
+    --primary-color: #00ffff;
+    --secondary-color: #ff00ff;
+    --background-color: #000033;
+    --text-color: #ffffff;
+  }
+
 .destination-header h1 {
     font-family: 'Orbitron', sans-serif;
     font-size: 4rem;
@@ -320,8 +335,9 @@ h2 {
 }
 
 .stat-label {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
+    padding: 2px;
 }
 
 ul {
@@ -336,7 +352,7 @@ li {
 }
 
 section li::before {
-    content: '►';
+    content: '';
     position: absolute;
     left: 0;
     color: var(--primary-color);
@@ -414,3 +430,36 @@ section li::before {
         gap: 1rem;
     }
 }
+
+.promoted-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 10;
+    box-shadow: 0 0 10px var(--primary-color);
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 10px var(--primary-color);
+    }
+    50% {
+      box-shadow: 0 0 20px var(--primary-color), 0 0 30px var(--primary-color);
+    }
+    100% {
+      box-shadow: 0 0 10px var(--primary-color);
+    }
+  }
+
+  .relative {
+    position: relative;
+  }

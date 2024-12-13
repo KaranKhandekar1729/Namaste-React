@@ -6,6 +6,7 @@ import desData from "../utils/api";
 const DestinationInfo = () => {
 
     const [activeTab, setActiveTab] = useState('overview');
+    const [selectedAddons, setSelectedAddons] = useState([]);
 
     const { id } = useParams();
     const desInfo = desData.find((des) => des.id === parseInt(id));
@@ -27,7 +28,9 @@ const DestinationInfo = () => {
         average_rating
     } = desInfo;
 
-    console.log(spacecraft);
+    const toggleAddon = (addon) => {
+        setSelectedAddons(prev => prev.includes(addon) ? prev.filter(a => a !== addon) : [...prev, addon]);
+    };
 
     return (
         <div className="destination-info">
@@ -67,6 +70,16 @@ const DestinationInfo = () => {
                                 <span className="stat-label">Rating</span>
                             </div>
                         </div>
+                        <div className="buy-ticket">
+                            <h2>Book Your Journey</h2>
+                            <p>Embark on an unforgettable adventure to {name}!</p>
+                            <button className="buy-button large">
+                                Reserve Your Spot - ${price.toLocaleString()}
+                            </button>
+                        </div>
+                        <div className="next-steps">
+                            <p>Next: Check out our <button className="link-button" onClick={() => setActiveTab('details')}>Add-ons</button> and <button className="link-button" onClick={() => setActiveTab('packages')}>Travel Packages</button> for an enhanced experience!</p>
+                        </div>
                     </section>
                 )}
 
@@ -102,18 +115,29 @@ const DestinationInfo = () => {
                                     <p>{spacecraft.type}</p>
                                     <p>{spacecraft.capacity}</p>
                                     <p>{spacecraft?.features?.join(", ")}</p>
-                                    </li>
+                                </li>
                             </ul>
                         </section>
 
                         <section className="destination-addons">
-                            <h2>Add-ons</h2>
+                            <h2>Enhance Your Journey with Add-ons</h2>
                             <ul>
                                 {addons?.map((addon, index) => (
                                     <li key={index}>
-                                        <h3>{addon.name}</h3>
-                                        <p>{addon.price}</p>
-                                        <p>{addon.feature}</p>
+                                        <div className="addon-feature">
+                                            <div className="addon-item">
+                                                <span>{addon.name}</span>
+                                                <div className="addon-price">
+                                                    <span>${addon.price}</span>
+                                                    <button className={`buy-button ${selectedAddons.includes(addon.name) ? 'selected' : ''}`}
+                                                        onClick={() => toggleAddon(addon.name)}
+                                                    >
+                                                        {selectedAddons.includes(addon.name) ? 'Remove' : 'Add'}
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <p>{addon.features}</p>
+                                        </div>
                                     </li>
                                 ))}
                             </ul>
@@ -124,37 +148,47 @@ const DestinationInfo = () => {
                 {activeTab === 'packages' && (
                     <section className="destination-packages">
                         <h2>Travel Packages</h2>
+                        <p>Choose from our carefully curated travel packages for an all-inclusive experience</p>
                         <ul>
                             {travel_packages?.map((pkg, index) => (
                                 <li key={index}>
-                                    <h3>{pkg.name}</h3>
-                                    <p>Duration: {pkg.duration}</p>
-                                    <p>Price: {pkg.price} {currency}</p>
-                                    <p>Includes: {pkg.includes.join(', ')}</p>
+                                    <div className="package-feature">
+                                    <div className="package-item">
+                                        <h3>{pkg.name}</h3>
+                                        <div className="package-action">
+                                            <span className="package-price">${pkg.price} {currency}</span>
+                                            <button className="buy-button">Book Package</button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Duration: {pkg.duration}</p>
+                                        <p>Includes: {pkg.includes.join(', ')}</p>
+                                    </div>
+                                </div>
                                 </li>
                             ))}
-                        </ul>
+                    </ul>
                     </section>
                 )}
 
-                {activeTab === 'reviews' && (
-                    <section className="destination-reviews">
-                        <h2>User Reviews</h2>
-                        {reviews?.map((review, index) => (
-                            <div key={index} className="review">
-                                <h3>{review.user}</h3>
-                                <div className="review-rating">
-                                    {[...Array(5)].map((_, i) => (
-                                        <span key={i} className={i < review.rating ? 'star filled' : 'star'}>★</span>
-                                    ))}
-                                </div>
-                                <p>{review.comment}</p>
+            {activeTab === 'reviews' && (
+                <section className="destination-reviews">
+                    <h2>User Reviews</h2>
+                    {reviews?.map((review, index) => (
+                        <div key={index} className="review">
+                            <h3>{review.user}</h3>
+                            <div className="review-rating">
+                                {[...Array(5)].map((_, i) => (
+                                    <span key={i} className={i < review.rating ? 'star filled' : 'star'}>★</span>
+                                ))}
                             </div>
-                        ))}
-                    </section>
-                )}
-            </div>
+                            <p>{review.comment}</p>
+                        </div>
+                    ))}
+                </section>
+            )}
         </div>
+        </div >
     );
 };
 

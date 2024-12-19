@@ -1,43 +1,55 @@
 import logo from "../../assets/images/logo.png";
+import { useContext, useState } from "react";
+import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 import { useState } from "react";
 import { Link } from 'react-router';
 
 const Header = () => {
     const [btnNameReact, setBtnNameReact] = useState("Login");
 
+    const onlineStatus = useOnlineStatus();
+
+    const { loggedInUser } = useContext(UserContext);
+
+    const cartItems = useSelector((store) => store.cart.items)
+
     return (
-        <div className="header">
+        <header className="header">
             <div className="logo-container">
-                <img className="logo"
-                    src={logo}
-                />
+                <img className="logo" src={logo} alt="Galactic Gateways Logo" />
+                <span className="brand-name">Galactic Gateways</span>
             </div>
-            <div className="nav-items">
+            <nav className="nav-items">
                 <ul>
-                    <li id="alignleft">Galactic Gateways</li>
                     <li>
-                        <Link to="/">Home</Link>
+                        <span className="online-status">
+                            {onlineStatus ? '🟢 Online' : '🔴 Offline'}
+                        </span>
                     </li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About Us</Link></li>
+                    <li><Link to="/contact">Contact Us</Link></li>
                     <li>
-                        <Link to="/about">About Us</Link>
+                        <Link to="/cart" className="cart-link">
+                            Cart ({cartItems.length})
+                        </Link>
                     </li>
-                    <li>
-                        <Link to="/contact">Contact Us</Link>
-                    </li>
-                    <li>Cart</li>
-                    <button 
-                        className="login"
-                        onClick={() => {
-                            btnNameReact === "Login" 
-                                ? setBtnNameReact("Logout") 
-                                : setBtnNameReact("Login");
-                        }}
-                    >
-                        {btnNameReact}
-                    </button>
                 </ul>
+            </nav>
+            <div className="user-actions">
+                <button
+                    className="login-button"
+                    onClick={() => {
+                        setBtnNameReact(btnNameReact === "Login" ? "Logout" : "Login");
+                    }}
+                >
+                    {btnNameReact}
+                </button>
+                <span className="user-name">{loggedInUser}</span>
             </div>
-        </div>
+        </header>
     );
 };
 

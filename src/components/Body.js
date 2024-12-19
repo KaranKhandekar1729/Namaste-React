@@ -13,7 +13,6 @@ const Body = () => {
     return (
         <div className="body">
             <Hero />
-            <Ticket />
         </div>
     );
 };

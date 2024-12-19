@@ -5,6 +5,7 @@ import Body from "./components/Body";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
+import CardPage from "./components/CardPage";
 import DestinationInfo from "./components/DestinationInfo";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
 import UserContext from "./utils/UserContext";
@@ -62,6 +63,10 @@ const appRouter = createBrowserRouter([
             {
                 path: "/cart",
                 element: <Cart />
+            },
+            {
+                path: "/destination",
+                element: <CardPage />
             },
         ],
         errorElement: <Error />,

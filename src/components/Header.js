@@ -47,7 +47,7 @@ const Header = () => {
                 >
                     {btnNameReact}
                 </button>
-                <span className="user-name">{loggedInUser}</span>
+                {/* <span className="user-name">{loggedInUser}</span> */}
             </div>
         </header>
     );

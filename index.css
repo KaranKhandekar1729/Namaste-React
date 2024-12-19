@@ -131,18 +131,13 @@ body {
 
 .cta-button {
     display: inline-block;
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     color: var(--background-color);
     padding: 0.8rem 1.5rem;
-    border-radius: 5px;
     text-decoration: none;
+    border-radius: 5px;
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: var(--primary-color);
 }
 
 .des-cards-row {
@@ -794,6 +789,7 @@ section li::before {
 .cart-item {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 1rem;
+    margin: 1rem;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;

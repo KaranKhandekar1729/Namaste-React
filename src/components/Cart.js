@@ -13,32 +13,36 @@ const Cart = () => {
         dispatch(clearCart());
     };
 
-
     return (
         <div className="destination-info">
             <h1>Cart</h1>
             <div className="cart-content">
                 {cartItems.length > 0 ? (
-                    cartItems.map((item, index) => (
-                        <>
-                        {console.log(cartItems)}
-                        <div key={index}>
-                            <div className="cart-item">
-                                <span>{item.package ? item.name : "Ticket to "+item.name}</span>
+                    <>
+                        {cartItems.map((item, index) => (
+                            <div key={index} className="cart-item">
+                                <span>{item.package ? item.name : `Ticket to ${item.name}`}</span>
                                 <div className="cart-action">
                                     <span>${item.price}</span>
-                                    <button className="buy-button" onClick={() => handleRemoveItem(item.name)}>Remove Item</button>
+                                    <button
+                                        className="buy-button"
+                                        onClick={() => handleRemoveItem(item.name)}
+                                    >
+                                        Remove Item
+                                    </button>
                                 </div>
                             </div>
-                        </div>
-                        </>
-                    ))
+                        ))}
+                        <button
+                            className="buy-button clear-cart-button"
+                            onClick={handleClearCart}
+                        >
+                            Clear Cart
+                        </button>
+                    </>
                 ) : (
-                    <p>Your cart is empty. Add items to the cart!</p>
+                    <p>Your cart is empty. Start adding items!</p>
                 )}
-                <div>
-                    <button className="buy-button" onClick={handleClearCart}>Clear Cart</button>
-                </div>
             </div>
         </div>
     );

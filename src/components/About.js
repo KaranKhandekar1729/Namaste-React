@@ -1,6 +1,7 @@
 import User from './User'
 import UserClass from './UserClass';
 import { Component } from 'react';
+import "../../aboutUs.css";
 
 class About extends Component {
     constructor(props) {
@@ -14,12 +15,7 @@ class About extends Component {
     render() {
         return (
             <div>
-                <h1 color="white">This is my About page</h1>
-                <UserClass
-                    name={"Karan"}
-                    location={"Mumbai"}
-                    contact={"@julescomet"}
-                />
+                <UserClass />
             </div>
         );
     };

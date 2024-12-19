@@ -2,11 +2,17 @@ import React from "react";
 import { useParams } from "react-router";
 import { useState } from "react";
 import desData from "../utils/api";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { addItem, removeItem } from "../utils/cartSlice";
+
 
 const DestinationInfo = () => {
 
     const [activeTab, setActiveTab] = useState('overview');
     const [selectedAddons, setSelectedAddons] = useState([]);
+    const dispatch = useDispatch();
 
     const { id } = useParams();
     const desInfo = desData.find((des) => des.id === parseInt(id));
@@ -28,8 +34,32 @@ const DestinationInfo = () => {
         average_rating
     } = desInfo;
 
+    const cartItems = useSelector(state => state.cart.items);
+
+    useEffect(() => {
+        const cartAddonNames = cartItems.map(item => item.name); 
+        setSelectedAddons(cartAddonNames);
+    }, [cartItems]);
+
     const toggleAddon = (addon) => {
-        setSelectedAddons(prev => prev.includes(addon) ? prev.filter(a => a !== addon) : [...prev, addon]);
+        setSelectedAddons(prev => {
+            const newSelectedAddons = prev.includes(addon.name) 
+                ? prev.filter(a => a !== addon.name) 
+                : [...prev, addon.name];
+
+            if (newSelectedAddons.includes(addon.name)) {
+                dispatch(addItem(addon));
+            } else {
+                dispatch(removeItem(addon));
+            }
+
+            return newSelectedAddons;
+        });
+    };
+
+    const handleBookJourney = () => {
+        const addon = { name, price };
+        toggleAddon(addon); 
     };
 
     return (
@@ -73,8 +103,10 @@ const DestinationInfo = () => {
                         <div className="buy-ticket">
                             <h2>Book Your Journey</h2>
                             <p>Embark on an unforgettable adventure to {name}!</p>
-                            <button className="buy-button large">
-                                Reserve Your Spot - ${price.toLocaleString()}
+                            <button className={`buy-button ${selectedAddons.includes(name) ? 'selected' : ''}`}
+                                onClick={handleBookJourney}
+                            >
+                                {selectedAddons.includes(name) ? 'Cancel Your Spot' : `Reserve Your Spot - ${price}`}
                             </button>
                         </div>
                         <div className="next-steps">
@@ -130,7 +162,7 @@ const DestinationInfo = () => {
                                                 <div className="addon-price">
                                                     <span>${addon.price}</span>
                                                     <button className={`buy-button ${selectedAddons.includes(addon.name) ? 'selected' : ''}`}
-                                                        onClick={() => toggleAddon(addon.name)}
+                                                        onClick={() => toggleAddon(addon)}
                                                     >
                                                         {selectedAddons.includes(addon.name) ? 'Remove' : 'Add'}
                                                     </button>
@@ -157,7 +189,11 @@ const DestinationInfo = () => {
                                         <h3>{pkg.name}</h3>
                                         <div className="package-action">
                                             <span className="package-price">${pkg.price} {currency}</span>
-                                            <button className="buy-button">Book Package</button>
+                                            <button className={`buy-button ${selectedAddons.includes(pkg.name) ? 'selected' : ''}`}
+                                                onClick={() => toggleAddon(pkg)}
+                                            >
+                                                {selectedAddons.includes(pkg.name) ? 'Booked' : 'Book Package'}
+                                            </button>
                                         </div>
                                     </div>
                                     <div>

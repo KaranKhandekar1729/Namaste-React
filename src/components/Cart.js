@@ -19,12 +19,12 @@ const Cart = () => {
             <h1>Cart</h1>
             <div className="cart-content">
                 {cartItems.length > 0 ? (
-                    cartItems?.map((item, index) => (
+                    cartItems.map((item, index) => (
                         <>
                         {console.log(cartItems)}
                         <div key={index}>
                             <div className="cart-item">
-                                <span>{item?.features ? item.name : "Ticket to "+item.name}</span>
+                                <span>{item.package ? item.name : "Ticket to "+item.name}</span>
                                 <div className="cart-action">
                                     <span>${item.price}</span>
                                     <button className="buy-button" onClick={() => handleRemoveItem(item.name)}>Remove Last Item</button>

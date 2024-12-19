@@ -70,6 +70,7 @@ const desData = [
                 "name": "Kepler Explorer Package",
                 "duration": "5 Earth years",
                 "price": "1500000",
+                "package": true,
                 "includes": [
                     "Round-trip cryosleep transit",
                     "3-year stay in climate-controlled habitat",
@@ -82,6 +83,7 @@ const desData = [
                 "name": "Kepler Colonist Program",
                 "duration": "One-way trip",
                 "price": "2500000",
+                "package": true,
                 "includes": [
                     "One-way cryosleep transit",
                     "Permanent residence in colony biodome",
@@ -107,6 +109,7 @@ const desData = [
             {
                 "name": "Kepler-22b Survival Suit",
                 "price": "50000",
+                "package": true,
                 "features": [
                     "Adaptive climate control",
                     "Built-in air purification system",
@@ -166,6 +169,7 @@ const desData = [
                 "name": "Lunar Luxury Getaway",
                 "duration": "7 Earth days",
                 "price": "750000",
+                "package": true,
                 "includes": [
                     "Round-trip shuttle transport",
                     "Luxury Earth-view suite",
@@ -178,6 +182,7 @@ const desData = [
                 "name": "Lunar Research Expedition",
                 "duration": "30 Earth days",
                 "price": "1200000",
+                "package": true,
                 "includes": [
                     "Round-trip shuttle transport",
                     "Extended stay in researcher quarters",
@@ -202,6 +207,7 @@ const desData = [
             {
                 "name": "Personal Lunar Excursion Suit",
                 "price": "25000",
+                "package": true,
                 "features": [
                     "Custom-fitted design",
                     "Built-in waste management system",
@@ -261,6 +267,7 @@ const desData = [
                 "name": "ISS Explorer",
                 "duration": "10 Earth days",
                 "price": "350000",
+                "package": true,
                 "includes": [
                     "Round-trip space shuttle transport",
                     "Accommodation in ISS crew quarters",
@@ -273,6 +280,7 @@ const desData = [
                 "name": "Orbital Researcher",
                 "duration": "30 Earth days",
                 "price": "750000",
+                "package": true,
                 "includes": [
                     "Extended stay on the ISS",
                     "Access to research facilities",
@@ -297,6 +305,7 @@ const desData = [
             {
                 "name": "Personal Space Activity Kit",
                 "price": "15000",
+                "package": true,
                 "features": [
                     "Custom-designed space suit",
                     "Personal experiments package",
@@ -356,6 +365,7 @@ const desData = [
                 "name": "Centauri Explorer",
                 "duration": "5 Earth years",
                 "price": "1500000",
+                "package": true,
                 "includes": [
                     "Round-trip interstellar travel",
                     "3-year stay in shielded habitat",
@@ -368,6 +378,7 @@ const desData = [
                 "name": "Centauri Scientist",
                 "duration": "10 Earth years",
                 "price": "3000000",
+                "package": true,
                 "includes": [
                     "Extended research stay",
                     "Access to all scientific facilities",
@@ -393,6 +404,7 @@ const desData = [
             {
                 "name": "Centauri Extreme Environment Suit",
                 "price": "100000",
+                "package": true,
                 "features": [
                     "Advanced heat resistance (up to 1500°C)",
                     "Radiation deflection technology",
@@ -452,6 +464,7 @@ const desData = [
                 "name": "Orbital Luxury Experience",
                 "duration": "7 Earth days",
                 "price": "250000",
+                "package": true,
                 "includes": [
                     "Round-trip shuttle transport",
                     "Luxury suite accommodation",
@@ -464,6 +477,7 @@ const desData = [
                 "name": "Genesis Deep Space Preparation",
                 "duration": "30 Earth days",
                 "price": "750000",
+                "package": true,
                 "includes": [
                     "Extended stay in variable gravity quarters",
                     "Comprehensive astronaut training program",
@@ -489,6 +503,7 @@ const desData = [
             {
                 "name": "Personal Space Exploration Kit",
                 "price": "50000",
+                "package": true,
                 "features": [
                     "Custom-fitted space suit for external activities",
                     "Personal propulsion unit for space walks",
@@ -549,6 +564,7 @@ const desData = [
                 "name": "Kepler-186f Discovery Expedition",
                 "duration": "5 Earth years",
                 "price": "1500000",
+                "package": true,
                 "includes": [
                     "Round-trip interstellar travel",
                     "3-year stay in climate-controlled habitat",
@@ -561,6 +577,7 @@ const desData = [
                 "name": "Red World Colonist Program",
                 "duration": "One-way trip",
                 "price": "2500000",
+                "package": true,
                 "includes": [
                     "One-way interstellar travel",
                     "Permanent residence in terraforming colony",
@@ -586,6 +603,7 @@ const desData = [
             {
                 "name": "Kepler-186f Exploration Suite",
                 "price": "75000",
+                "package": true,
                 "features": [
                     "Adaptive exosuit for various planetary conditions",
                     "Portable atmospheric analyzer",
@@ -647,6 +665,7 @@ const desData = [
                 "name": "Resolute Explorer",
                 "duration": "1 Earth year",
                 "price": "1000000",
+                "package": true,
                 "includes": [
                     "Round-trip interstellar travel",
                     "6-month stay in rotating habitation ring",
@@ -659,6 +678,7 @@ const desData = [
                 "name": "Deep Space Researcher",
                 "duration": "3 Earth years",
                 "price": "2500000",
+                "package": true,
                 "includes": [
                     "Extended stay with private quarters",
                     "Full access to all research facilities",
@@ -684,6 +704,7 @@ const desData = [
             {
                 "name": "Deep Space Survival Kit",
                 "price": "50000",
+                "package": true,
                 "features": [
                     "Personalized space suit with extended life support",
                     "Portable quantum communicator",
@@ -744,6 +765,7 @@ const desData = [
                 "name": "Red Planet Explorer",
                 "duration": "3 Earth months",
                 "price": "950000",
+                "package": true,
                 "includes": [
                     "Round-trip interplanetary travel",
                     "Accommodation in Mars Habitat dome",
@@ -756,6 +778,7 @@ const desData = [
                 "name": "Mars Colonist Training",
                 "duration": "1 Earth year",
                 "price": "2000000",
+                "package": true,
                 "includes": [
                     "Extended stay in Mars Habitat",
                     "Comprehensive Mars survival training",
@@ -782,6 +805,7 @@ const desData = [
             {
                 "name": "Martian Explorer Kit",
                 "price": "35000",
+                "package": true,
                 "features": [
                     "Custom-fitted Mars suit with enhanced mobility",
                     "Portable atmospheric analyzer and radiation detector",
@@ -842,6 +866,7 @@ const desData = [
                 "name": "Europa Discovery",
                 "duration": "6 Earth months",
                 "price": "1200000",
+                "package": true,
                 "includes": [
                     "Round-trip interplanetary travel",
                     "Accommodation in radiation-shielded quarters",
@@ -854,6 +879,7 @@ const desData = [
                 "name": "Astrobiology Research Expedition",
                 "duration": "2 Earth years",
                 "price": "3000000",
+                "package": true,
                 "includes": [
                     "Extended stay at Europa Station",
                     "Full access to research facilities and laboratories",
@@ -879,6 +905,7 @@ const desData = [
             {
                 "name": "Europa Exploration Suite",
                 "price": "80000",
+                "package": true,
                 "features": [
                     "Thermal regulation suit for extreme cold",
                     "Personal radiation shield",
@@ -939,6 +966,7 @@ const desData = [
                 "name": "Titan Adventure",
                 "duration": "1 Earth year",
                 "price": "1500000",
+                "package": true,
                 "includes": [
                     "Round-trip interplanetary travel",
                     "Accommodation in pressurized, heated habitats",
@@ -951,6 +979,7 @@ const desData = [
                 "name": "Saturnian System Research",
                 "duration": "3 Earth years",
                 "price": "3500000",
+                "package": true,
                 "includes": [
                     "Extended stay at Titan Base",
                     "Access to all research facilities and expeditions",
@@ -976,6 +1005,7 @@ const desData = [
             {
                 "name": "Titan Survival Kit",
                 "price": "100000",
+                "package": true,
                 "features": [
                     "Extreme cold-resistant exosuit",
                     "Methane-resistant outer layer",
@@ -1009,17 +1039,98 @@ const desData = [
         "type": "Moon Base",
         "distance": "628.3 million km",
         "travel_time": "18 months",
-        "overview": "A luxury resort on Callisto, Jupiter's moon, offering peaceful views and lavish accommodations.",
+        "overview": "Callisto Retreat is a luxury resort situated on Jupiter's moon, Callisto. Known for its serene cratered landscapes and majestic views of Jupiter, the retreat offers a perfect blend of tranquility and cutting-edge amenities for a truly unique getaway. The resort is designed for travelers seeking peace and exclusivity amidst the wonders of space.",
         "features": [
-            "Luxury suites",
-            "Stunning crater views",
-            "Exclusive low-gravity activities"
+            "Luxury suites with panoramic views",
+            "Stunning crater vistas",
+            "Exclusive low-gravity activities",
+            "State-of-the-art wellness center",
+            "Observation dome with advanced telescopes"
+        ],
+        "activities": [
+            "Low-gravity golf tournaments",
+            "Celestial observation sessions",
+            "Guided crater explorations",
+            "Zero-gravity yoga",
+            "Stargazing and astrophotography workshops"
         ],
         "images": [
             callisto
         ],
-        "price": "1200000"
-    },
+        "price": "1200000",
+        "currency": "Galactic Credits",
+        "travel_packages": [
+            {
+                "name": "Callisto Luxury Escape",
+                "duration": "3 Earth months",
+                "price": "2000000",
+                "package": true,
+                "includes": [
+                    "Round-trip space travel",
+                    "Accommodation in premium crater-view suites",
+                    "Exclusive access to low-gravity activities",
+                    "Personalized stargazing experiences",
+                    "Complimentary spa and wellness treatments"
+                ]
+            },
+            {
+                "name": "Jovian Explorer Package",
+                "duration": "6 Earth months",
+                "price": "3500000",
+                "package": true,
+                "includes": [
+                    "Extended stay at Callisto Retreat",
+                    "Access to Jovian system tours",
+                    "Specialized astrophotography equipment rental",
+                    "Participation in low-gravity sports events",
+                    "Opportunity to name a Callisto crater"
+                ]
+            }
+        ],
+        "spacecraft": {
+            "name": "Jovian Voyager",
+            "type": "Luxury space cruiser",
+            "capacity": 150,
+            "features": [
+                "Rotating habitat for artificial gravity",
+                "Luxury suites with observation windows",
+                "Advanced propulsion for smooth travel",
+                "Onboard entertainment and dining",
+                "Enhanced safety systems for lunar landings"
+            ]
+        },
+        "addons": [
+            {
+                "name": "Callisto Adventure Gear",
+                "price": "100000",
+                "package": true,
+                "features": [
+                    "Radiation-shielded exploration suit",
+                    "Advanced crater-navigation tools",
+                    "Portable low-gravity hoverboard",
+                    "Compact survival kit with extended life support",
+                    "Multi-tool for geological sampling"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "user": "GalacticNomad",
+                "rating": 5,
+                "comment": "An otherworldly retreat with luxury accommodations and jaw-dropping views of Jupiter. Absolutely unforgettable!"
+            },
+            {
+                "user": "LunarLover",
+                "rating": 4,
+                "comment": "Callisto's peace is unmatched, but some activities were a bit crowded. Still a remarkable destination!"
+            }
+        ],
+        "average_rating": 4.5,
+        "related_destinations": [
+            { "id": 5, "name": "Europa Colony" },
+            { "id": 7, "name": "Titan Base" }
+        ]
+    },    
     {
         "id": 12,
         "name": "Proxima Centauri B",
@@ -1053,6 +1164,7 @@ const desData = [
                 "name": "Proxima Pioneer Experience",
                 "duration": "2 Earth years",
                 "price": "2500000",
+                "package": true,
                 "includes": [
                     "Round-trip interstellar travel",
                     "Accommodation in shielded terminator zone habitat",
@@ -1065,6 +1177,7 @@ const desData = [
                 "name": "Red Dwarf Research Fellowship",
                 "duration": "5 Earth years",
                 "price": "4000000",
+                "package": true,
                 "includes": [
                     "Extended stay at Proxima B research station",
                     "Access to state-of-the-art astrophysics equipment",
@@ -1090,6 +1203,7 @@ const desData = [
             {
                 "name": "Proxima Survival System",
                 "price": "150000",
+                "package": true,
                 "features": [
                     "Radiation-resistant exosuit",
                     "Adaptable vision enhancement for low-light conditions",
@@ -1149,6 +1263,7 @@ const desData = [
                 "name": "Ganymede Explorer",
                 "duration": "6 Earth months",
                 "price": "1100000",
+                "package": true,
                 "includes": [
                     "Round-trip interplanetary travel",
                     "Accommodation in radiation-shielded quarters",
@@ -1161,6 +1276,7 @@ const desData = [
                 "name": "Jovian Moons Research Program",
                 "duration": "2 Earth years",
                 "price": "2800000",
+                "package": true,
                 "includes": [
                     "Extended stay at Ganymede Hub",
                     "Access to all research facilities and expeditions",
@@ -1186,6 +1302,7 @@ const desData = [
             {
                 "name": "Ganymede Adventure Pack",
                 "price": "75000",
+                "package": true,
                 "features": [
                     "Personal radiation shield",
                     "Heated exosuit for extreme cold",
@@ -1246,6 +1363,7 @@ const desData = [
                 "name": "Vega Discovery",
                 "duration": "1 Earth year",
                 "price": "1800000",
+                "package": true,
                 "includes": [
                     "Round-trip interstellar travel",
                     "Luxury accommodation with panoramic space views",
@@ -1258,6 +1376,7 @@ const desData = [
                 "name": "Interstellar Research Expedition",
                 "duration": "5 Earth years",
                 "price": "4000000",
+                "package": true,
                 "includes": [
                     "Extended stay at Vega Prime",
                     "Access to all scientific and research facilities",
@@ -1285,6 +1404,7 @@ const desData = [
             {
                 "name": "Vega Luxury Experience Pack",
                 "price": "50000",
+                "package": true,
                 "features": [
                     "Private stateroom with 360° space-view",
                     "Exclusive access to private astronomical tours",
@@ -1347,6 +1467,7 @@ const desData = [
                 "name": "Kepler-452b Expedition",
                 "duration": "2 Earth years",
                 "price": "3500000",
+                "package": true,
                 "includes": [
                     "Round-trip interstellar travel",
                     "Accommodation in gravity-adjusted habitats",
@@ -1359,6 +1480,7 @@ const desData = [
                 "name": "Super-Earth Longitudinal Study",
                 "duration": "10 Earth years",
                 "price": "8000000",
+                "package": true,
                 "includes": [
                     "Extended stay in Kepler-452b Colony",
                     "Full access to all research facilities and expeditions",
@@ -1384,6 +1506,7 @@ const desData = [
             {
                 "name": "Kepler-452b Adaptation Package",
                 "price": "250000",
+                "package": true,
                 "features": [
                     "Personalized high-gravity acclimatization program",
                     "Exoskeleton suit for easier movement in high gravity",
@@ -1443,6 +1566,7 @@ const desData = [
                 "name": "Barnard's Star Experience",
                 "duration": "1 Earth year",
                 "price": "2500000",
+                "package": true,
                 "includes": [
                     "Round-trip interstellar travel",
                     "Accommodation in flare-shielded quarters",
@@ -1455,6 +1579,7 @@ const desData = [
                 "name": "Red Dwarf Research Fellowship",
                 "duration": "5 Earth years",
                 "price": "6000000",
+                "package": true,
                 "includes": [
                     "Extended stay at Barnard's Star Base",
                     "Full access to all research facilities and missions",
@@ -1480,6 +1605,7 @@ const desData = [
             {
                 "name": "Interstellar Explorer Kit",
                 "price": "300000",
+                "package": true,
                 "features": [
                     "Personal flare shield generator",
                     "Quantum entangled communication device",
@@ -1539,6 +1665,7 @@ const desData = [
                 "name": "Ceres Adventure",
                 "duration": "3 Earth months",
                 "price": "1000000",
+                "package": true,
                 "includes": [
                     "Round-trip interplanetary travel",
                     "Accommodation in subsurface habitation units",
@@ -1551,6 +1678,7 @@ const desData = [
                 "name": "Asteroid Belt Industrialist Program",
                 "duration": "2 Earth years",
                 "price": "3500000",
+                "package": true,
                 "includes": [
                     "Extended stay at Ceres Outpost",
                     "Comprehensive training in asteroid mining techniques",
@@ -1576,6 +1704,7 @@ const desData = [
             {
                 "name": "Asteroid Miner's Toolkit",
                 "price": "100000",
+                "package": true,
                 "features": [
                     "Personal propulsion unit for asteroid navigation",
                     "Handheld mineral analyzer and 3D mapping device",
@@ -1637,6 +1766,7 @@ const desData = [
                 "name": "Wormhole Explorer",
                 "duration": "2 Earth years",
                 "price": "7500000",
+                "package": true,
                 "includes": [
                     "Round-trip intergalactic travel",
                     "Accommodation in advanced space station quarters",
@@ -1649,6 +1779,7 @@ const desData = [
                 "name": "Galactic Research Expedition",
                 "duration": "5 Earth years",
                 "price": "15000000",
+                "package": true,
                 "includes": [
                     "Extended stay at Wormhole Gateway Station",
                     "Full access to all wormhole control and space-time research facilities",
@@ -1674,6 +1805,7 @@ const desData = [
             {
                 "name": "Wormhole Traveler Pack",
                 "price": "100000",
+                "package": true,
                 "features": [
                     "Personalized wormhole trajectory analysis tool",
                     "High-tech gravitation shielding for safe wormhole transit",
@@ -1734,6 +1866,7 @@ const desData = [
                 "name": "Enceladus Ice Adventure",
                 "duration": "6 Earth months",
                 "price": "1800000",
+                "package": true,
                 "includes": [
                     "Round-trip interplanetary travel",
                     "Accommodation in heated subsurface ice habitats",
@@ -1746,6 +1879,7 @@ const desData = [
                 "name": "Astrobiology Research Expedition",
                 "duration": "2 Earth years",
                 "price": "4500000",
+                "package": true,
                 "includes": [
                     "Extended stay at Enceladus Glacier Base",
                     "Full access to all research facilities and expeditions",
@@ -1771,6 +1905,7 @@ const desData = [
             {
                 "name": "Enceladus Extreme Environment Kit",
                 "price": "200000",
+                "package": true,
                 "features": [
                     "Thermal regulation suit for extreme cold",
                     "Personal ice-penetrating sonar device",
@@ -1833,6 +1968,7 @@ const desData = [
                 "name": "Trappist-1e Adventure",
                 "duration": "1 Earth year",
                 "price": "2000000",
+                "package": true,
                 "includes": [
                     "Round-trip interstellar travel",
                     "Stay in luxury floating resort accommodations",
@@ -1845,6 +1981,7 @@ const desData = [
                 "name": "Exoplanet Explorer",
                 "duration": "2 Earth years",
                 "price": "3800000",
+                "package": true,
                 "includes": [
                     "Extended stay at Trappist-1e Resort",
                     "All-inclusive luxury accommodations and activities",
@@ -1870,6 +2007,7 @@ const desData = [
             {
                 "name": "Trappist-1e Exploration Pack",
                 "price": "125000",
+                "package": true,
                 "features": [
                     "Personalized flora and fauna identification tool",
                     "Advanced extraterrestrial photography kit",
@@ -1930,6 +2068,7 @@ const desData = [
                 "name": "Hyperion Adventure",
                 "duration": "6 Earth months",
                 "price": "1200000",
+                "package": true,
                 "includes": [
                     "Round-trip interplanetary travel",
                     "Accommodation in unique low-gravity habitats",
@@ -1942,6 +2081,7 @@ const desData = [
                 "name": "Saturnian Moon Research Program",
                 "duration": "2 Earth years",
                 "price": "3500000",
+                "package": true,
                 "includes": [
                     "Extended stay at Hyperion Nexus",
                     "Full access to all research facilities and expeditions",
@@ -1967,6 +2107,7 @@ const desData = [
             {
                 "name": "Hyperion Explorer Kit",
                 "price": "200000",
+                "package": true,
                 "features": [
                     "Personal propulsion unit for low-gravity navigation",
                     "Portable spectrometer for on-site geological analysis",
@@ -2028,6 +2169,7 @@ const desData = [
                 "name": "Orbital Getaway",
                 "duration": "1 Earth week",
                 "price": "150000",
+                "package": true,
                 "includes": [
                     "Round-trip shuttle flight to 2054 Space Station",
                     "Accommodation in zero-gravity quarters",
@@ -2040,6 +2182,7 @@ const desData = [
                 "name": "LEO Research Fellowship",
                 "duration": "6 Earth months",
                 "price": "1000000",
+                "package": true,
                 "includes": [
                     "Extended stay on 2054 Space Station",
                     "Full access to all research facilities",
@@ -2065,6 +2208,7 @@ const desData = [
             {
                 "name": "LEO Explorer Package",
                 "price": "50000",
+                "package": true,
                 "features": [
                     "Personalized space suit for space walk experience",
                     "High-resolution camera for Earth photography",
@@ -2126,6 +2270,7 @@ const desData = [
                 "name": "Interstellar Pioneer Experience",
                 "duration": "5 Earth years",
                 "price": "3000000",
+                "package": true,
                 "includes": [
                     "Round-trip interstellar travel to Oumuamua",
                     "Accommodation in state-of-the-art long-duration space habitats",
@@ -2138,6 +2283,7 @@ const desData = [
                 "name": "Oumuamua Research Fellowship",
                 "duration": "12 Earth years",
                 "price": "8000000",
+                "package": true,
                 "includes": [
                     "Extended mission aboard the Oumuamua Cruiser",
                     "Full access to all research facilities and expeditions",
@@ -2163,6 +2309,7 @@ const desData = [
             {
                 "name": "Interstellar Explorer Kit",
                 "price": "500000",
+                "package": true,
                 "features": [
                     "Personal quantum computer with interstellar navigation systems",
                     "Handheld multi-spectral analyzer for Oumuamua surface studies",
@@ -2222,6 +2369,7 @@ const desData = [
                 "name": "Cosmic Wonder Experience",
                 "duration": "3 Earth years",
                 "price": "2500000",
+                "package": true,
                 "includes": [
                     "Round-trip interstellar travel to Nebula Station",
                     "Accommodation in nebula-view habitation modules",
@@ -2234,6 +2382,7 @@ const desData = [
                 "name": "Deep Space Astrophysics Fellowship",
                 "duration": "10 Earth years",
                 "price": "7000000",
+                "package": true,
                 "includes": [
                     "Extended stay at Nebula Station",
                     "Full access to all research facilities and deep space missions",
@@ -2259,6 +2408,7 @@ const desData = [
             {
                 "name": "Cosmic Explorer Package",
                 "price": "400000",
+                "package": true,
                 "features": [
                     "Personal nebula exploration suit with enhanced radiation protection",
                     "Portable stellar spectrometer for individual research projects",
@@ -2319,6 +2469,7 @@ const desData = [
                 "name": "Ringworld Pioneer Experience",
                 "duration": "5 Earth years",
                 "price": "10000000",
+                "package": true,
                 "includes": [
                     "Theoretical travel to the Ringworld (simulation-based)",
                     "Accommodation in diverse Ringworld habitats",
@@ -2331,6 +2482,7 @@ const desData = [
                 "name": "Cosmic Architecture Fellowship",
                 "duration": "10 Earth years",
                 "price": "25000000",
+                "package": true,
                 "includes": [
                     "Extended theoretical stay on the Ringworld",
                     "Full access to all research facilities and expeditions",
@@ -2356,6 +2508,7 @@ const desData = [
             {
                 "name": "Cosmic Architect Kit",
                 "price": "1000000",
+                "package": true,
                 "features": [
                     "Personal reality manipulation device for Ringworld interaction",
                     "Quantum computer with advanced megastructure modeling software",

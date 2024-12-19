@@ -4,6 +4,7 @@ import { use, useState } from "react";
 import { Link } from "react-router";
 import DestinationInfo from "./DestinationInfo";
 import useOnlineStatus from '../utils/useOnlineStatus';
+import Hero from "./Hero";
 
 const Body = () => {
     //local state variable - Super powerful variable
@@ -43,6 +44,7 @@ const Body = () => {
 
     return (
         <div className="body">
+            <Hero />
             <div className="filter">
                 <div className="search">
                     <input

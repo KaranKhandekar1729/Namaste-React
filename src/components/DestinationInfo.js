@@ -37,14 +37,14 @@ const DestinationInfo = () => {
     const cartItems = useSelector(state => state.cart.items);
 
     useEffect(() => {
-        const cartAddonNames = cartItems.map(item => item.name); 
+        const cartAddonNames = cartItems.map(item => item.name);
         setSelectedAddons(cartAddonNames);
     }, [cartItems]);
 
     const toggleAddon = (addon) => {
         setSelectedAddons(prev => {
-            const newSelectedAddons = prev.includes(addon.name) 
-                ? prev.filter(a => a !== addon.name) 
+            const newSelectedAddons = prev.includes(addon.name)
+                ? prev.filter(a => a !== addon.name)
                 : [...prev, addon.name];
 
             if (newSelectedAddons.includes(addon.name)) {
@@ -59,7 +59,7 @@ const DestinationInfo = () => {
 
     const handleBookJourney = () => {
         const addon = { name, price };
-        toggleAddon(addon); 
+        toggleAddon(addon);
     };
 
     return (
@@ -110,7 +110,7 @@ const DestinationInfo = () => {
                             </button>
                         </div>
                         <div className="next-steps">
-                            <p>Next: Check out our <button className="link-button" onClick={() => setActiveTab('details')}>Add-ons</button> and <button className="link-button" onClick={() => setActiveTab('packages')}>Travel Packages</button> for an enhanced experience!</p>
+                            <p>Next: Check our <button className="link-button" onClick={() => setActiveTab('packages')}>Travel Packages</button> for an enhanced experience!</p>
                         </div>
                     </section>
                 )}
@@ -185,45 +185,48 @@ const DestinationInfo = () => {
                             {travel_packages?.map((pkg, index) => (
                                 <li key={index}>
                                     <div className="package-feature">
-                                    <div className="package-item">
-                                        <h3>{pkg.name}</h3>
-                                        <div className="package-action">
-                                            <span className="package-price">${pkg.price} {currency}</span>
-                                            <button className={`buy-button ${selectedAddons.includes(pkg.name) ? 'selected' : ''}`}
-                                                onClick={() => toggleAddon(pkg)}
-                                            >
-                                                {selectedAddons.includes(pkg.name) ? 'Booked' : 'Book Package'}
-                                            </button>
+                                        <div className="package-item">
+                                            <h3>{pkg.name}</h3>
+                                            <div className="package-action">
+                                                <span className="package-price">${pkg.price} {currency}</span>
+                                                <button className={`buy-button ${selectedAddons.includes(pkg.name) ? 'selected' : ''}`}
+                                                    onClick={() => toggleAddon(pkg)}
+                                                >
+                                                    {selectedAddons.includes(pkg.name) ? 'Booked' : 'Book Package'}
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>Duration: {pkg.duration}</p>
+                                            <p>Includes: {pkg.includes.join(', ')}</p>
                                         </div>
                                     </div>
-                                    <div>
-                                        <p>Duration: {pkg.duration}</p>
-                                        <p>Includes: {pkg.includes.join(', ')}</p>
-                                    </div>
-                                </div>
                                 </li>
                             ))}
-                    </ul>
+                        </ul>
+                        <div className="next-steps">
+                            <p>Next: Check out our <button className="link-button" onClick={() => setActiveTab('details')}>Add-ons</button></p>
+                        </div>
                     </section>
                 )}
 
-            {activeTab === 'reviews' && (
-                <section className="destination-reviews">
-                    <h2>User Reviews</h2>
-                    {reviews?.map((review, index) => (
-                        <div key={index} className="review">
-                            <h3>{review.user}</h3>
-                            <div className="review-rating">
-                                {[...Array(5)].map((_, i) => (
-                                    <span key={i} className={i < review.rating ? 'star filled' : 'star'}>★</span>
-                                ))}
+                {activeTab === 'reviews' && (
+                    <section className="destination-reviews">
+                        <h2>User Reviews</h2>
+                        {reviews?.map((review, index) => (
+                            <div key={index} className="review">
+                                <h3>{review.user}</h3>
+                                <div className="review-rating">
+                                    {[...Array(5)].map((_, i) => (
+                                        <span key={i} className={i < review.rating ? 'star filled' : 'star'}>★</span>
+                                    ))}
+                                </div>
+                                <p>{review.comment}</p>
                             </div>
-                            <p>{review.comment}</p>
-                        </div>
-                    ))}
-                </section>
-            )}
-        </div>
+                        ))}
+                    </section>
+                )}
+            </div>
         </div >
     );
 };

@@ -2,14 +2,14 @@
 
 .header {
     display: flex;
+    position: sticky;
+    top: 0;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     background: rgba(0, 0, 51, 0.8);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #00ffff;
-    position: sticky;
-    top: 0;
     z-index: 1000;
 }
 
@@ -124,6 +124,8 @@
 
 @media (max-width: 768px) {
     .header {
+        position: sticky;
+        top: 0;
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;

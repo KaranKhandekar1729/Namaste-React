@@ -16,3 +16,4 @@ Js compiler/transpiler
 * Components: React Component
               Class Based Component - Old
               Functional Component - New
+               a function that reutrns a piece of jsx

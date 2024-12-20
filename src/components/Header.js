@@ -1,19 +1,22 @@
+import { useState, useContext } from "react";
+import { useSelector } from "react-redux";
+import { Link } from 'react-router';
 import logo from "../../assets/images/logo.png";
-import { useContext, useState } from "react";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
-import { useSelector } from "react-redux";
-import { useState } from "react";
-import { Link } from 'react-router';
+import "../../header.css";
 
 const Header = () => {
     const [btnNameReact, setBtnNameReact] = useState("Login");
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const onlineStatus = useOnlineStatus();
-
     const { loggedInUser } = useContext(UserContext);
+    const cartItems = useSelector((store) => store.cart.items);
 
-    const cartItems = useSelector((store) => store.cart.items)
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
 
     return (
         <header className="header">
@@ -21,7 +24,12 @@ const Header = () => {
                 <img className="logo" src={logo} alt="Galactic Gateways Logo" />
                 <span className="brand-name">Galactic Gateways</span>
             </div>
-            <nav className="nav-items">
+            <div className={`hamburger-menu ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </div>
+            <nav className={`nav-items ${menuOpen ? "open" : ""}`}>
                 <ul>
                     <li>
                         <span className="online-status">
@@ -47,10 +55,10 @@ const Header = () => {
                 >
                     {btnNameReact}
                 </button>
-                {/* <span className="user-name">{loggedInUser}</span> */}
             </div>
         </header>
     );
 };
 
 export default Header;
+

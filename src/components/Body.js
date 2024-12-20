@@ -1,5 +1,6 @@
 import useOnlineStatus from '../utils/useOnlineStatus';
 import Hero from "./Hero";
+import Footer from "./Footer";
 
 const Body = () => {
 
@@ -13,6 +14,7 @@ const Body = () => {
     return (
         <div className="body">
             <Hero />
+            <Footer />
         </div>
     );
 };

@@ -54,10 +54,16 @@ This app is hosted on [Vercel](https://vercel.com). To deploy:
 
 ## Screenshots
 
-| Desktop Screenshots                                   | Mobile Screenshot         |
-|------------------------------------------------------|---------------------------|
-| ![Screenshot 1](assets/final/galactic-gateways-desktop-1.png) ![Screenshot 2](assets/final/galactic-gateways-desktop-2.png) ![Screenshot 3](assets/final/galactic-gateways-desktop-3.png) | <img src="assets/final/galactic-gateways-mobile.png" width="300"> |
-| ![Screenshot 4](assets/final/galactic-gateways-desktop-4.png) ![Screenshot 5](assets/final/galactic-gateways-desktop-5.png) ![Screenshot 6](assets/final/galactic-gateways-desktop-6.png) |                           |
+### Desktop Screenshots
+| Screenshot 1 | Screenshot 2 | Screenshot 3 |
+|--------------|--------------|--------------|
+| ![Screenshot 1](assets/final/galactic-gateways-desktop-1.png) | ![Screenshot 2](assets/final/galactic-gateways-desktop-2.png) | ![Screenshot 3](assets/final/galactic-gateways-desktop-3.png) |
+| Screenshot 4 | Screenshot 5 | Screenshot 6 |
+| ![Screenshot 4](assets/final/galactic-gateways-desktop-4.png) | ![Screenshot 5](assets/final/galactic-gateways-desktop-5.png) | ![Screenshot 6](assets/final/galactic-gateways-desktop-6.png) |
+
+### Mobile Screenshot
+![Mobile Screenshot](assets/final/galactic-gateways-mobile.png)
+
 
 ## Future Enhancements
 

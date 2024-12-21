@@ -56,7 +56,7 @@ This app is hosted on [Vercel](https://vercel.com). To deploy:
 
 | Desktop Screenshots                                   | Mobile Screenshot         |
 |------------------------------------------------------|---------------------------|
-| ![Screenshot 1](assets/final/galactic-gateways-desktop-1.png) ![Screenshot 2](assets/final/galactic-gateways-desktop-2.png) ![Screenshot 3](assets/final/galactic-gateways-desktop-3.png) | ![Mobile Screenshot](assets/final/galactic-gateways-mobile.png) |
+| ![Screenshot 1](assets/final/galactic-gateways-desktop-1.png) ![Screenshot 2](assets/final/galactic-gateways-desktop-2.png) ![Screenshot 3](assets/final/galactic-gateways-desktop-3.png) | <img src="assets/final/galactic-gateways-mobile.png" width="300"> |
 | ![Screenshot 4](assets/final/galactic-gateways-desktop-4.png) ![Screenshot 5](assets/final/galactic-gateways-desktop-5.png) ![Screenshot 6](assets/final/galactic-gateways-desktop-6.png) |                           |
 
 ## Future Enhancements

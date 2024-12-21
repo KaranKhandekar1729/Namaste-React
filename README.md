@@ -1,6 +1,6 @@
 # Galactic Gateways
 
-Welcome to **Galactic Gateways**, a space-themed web application where users can explore a futuristic universe, visit distant planets, and participate in intergalactic events. This app envisions a future where multiple civilizations come together for tournaments and other cosmic events.
+Welcome to **Galactic Gateways**, a space-themed web application where users can explore a futuristic universe, visit distant planets, and participate in intergalactic events. This app envisions a future where space travel is possible.
 
 ## Features
 

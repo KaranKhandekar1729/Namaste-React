@@ -17,6 +17,11 @@ Welcome to **Galactic Gateways**, a space-themed web application where users can
 - **API**: Custom-built local API
 - **Hosting**: Vercel
 
+## Badges
+![React](https://img.shields.io/badge/Frontend-React-blue) 
+![Parcel](https://img.shields.io/badge/Bundler-Parcel-orange) 
+![Vercel](https://img.shields.io/badge/Deployed-Vercel-success)
+
 ## The project is deployed at
 [Galactic Gateways](https://galacticgateways.vercel.app)
 
